@@ -1,10 +1,44 @@
-def contar_vocales(x):
-    voc=0
-    for i in len(cad):
-        if cad[i]=='a' or cad[i]=='e'or cad[i]=='i' or cad[i]=='o' or cad[i]=='u' or cad[i]=='A'or cad[i]=='E' or cad[i]=='I' or cad[i]=='O'or cad[i]=='U':
-            voc=voc+1
-        return voc
+#crear un arreglo de tamaño 10 a 30 [10;30]. Imprime el arreglo creado y luego solicita por consola la búsqueda de elemento en especifico del arreglo creado todo esto utilizando array
+"""import array
 
+mi_array = array.array('i', range(10,31))
+busqueda = int(input("Ingresa el elemento a buscar en el arreglo: "))
+encontrado = False
+for elemento  in mi_array:
+      if elemento == busqueda:
+        encontrado = True
+        break
+if encontrado:
+    print("El valor busqueda está en el array")
+else:
+    print("El valor busqueda no está en el array")
+"""
 
-cad = raw_input('')
-print contar_vocales(cad)
+#escribir un porgrama que le pida al usuario una palabra y muestre por consola el n° de veces que contiene cada vocal 
+"""cadena = "abuelito"
+def contar_vocales(cadena):
+	contador_a = 0
+	contador_e = 0
+	contador_i = 0
+	contador_o = 0
+	contador_u = 0
+	for letra in cadena:
+		if letra.lower() in "a":
+			contador_a += 1
+	for letra in cadena:
+		if letra.lower() in "e":
+			contador_e += 1
+	for letra in cadena:
+		if letra.lower() in "i":
+			contador_i += 1
+	for letra in cadena:
+		if letra.lower() in "o":
+			contador_o += 1
+	for letra in cadena:
+		if letra.lower() in "u":
+			contador_u += 1
+	return contador_a, contador_e,contador_i,contador_o,contador_u
+#print("la palabra tiene", contador_a,"a", contador_e, "e",contador_i, "i",contador_o, "o",contador_u, "u")
+print("las vocales a-e-i-o-u estan en ese orden")
+print(contar_vocales(cadena))
+"""

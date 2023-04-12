@@ -1,3 +1,4 @@
+# otro codigo en tarea.py 
 #escribir un porgrama que le pida al usuario una palabra y muestre por consola el n° de veces que contiene cada vocal 
 cadena = "abuelito"
 def contar_vocales(cadena):
