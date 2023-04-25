@@ -13,7 +13,7 @@ def matriz_2(fila, columna):
     m2 = []
     for i in range(fila):
         for j in range(columna):
-            m2[i][j] =  random.randint(1, 5)
+            m2[i][j] =  (random.randint(1, 5)({i+1}, {j+1}))
             return m2
         
 def suma(m1, m2):
