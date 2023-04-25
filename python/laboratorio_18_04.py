@@ -1,22 +1,28 @@
+import numpy as np
+
 columna = int(input("ingrese cantidad de columnas: "))
 fila = int(input("ingrese cantidad de filas: "))
+matriz = np.zeros((fila, columna))
+
+columna2 = int(input("ingrese cantidad de columnas: "))
+fila2 = int(input("ingrese cantidad de filas: "))
+matriz2 = np.zeros((fila2, columna2))
 
 def matriz_1(fila, columna):
-    m1 = []
     for i in range(fila):
         for j in range(columna):
-            m1[i][j] = int(input(f"elemento({i+1}, {j+1}):"))
-            return m1
+            matriz[i][j] += int(input(f"elemento:"))
+    return print(matriz)
 
-def matriz_2(fila, columna):
-    m2 = []
-    for i in range(fila):
-        for j in range(columna):
-            m2[i][j] = int(input(f"elemento({i+1}, {j+1}):"))
-            return m2
+def matriz_2(fila2, columna2):
+    for i in range(fila2):
+        for j in range(columna2):
+            matriz2[i][j] += int(input(f"elemento2:"))
+    return  print(matriz2)
 
-def suma(m1, m2):
-    rf = (m1 + m2), (m1 - m2)
+def suma(matriz, matriz2):
+    rf = (matriz + matriz2), (matriz - matriz2)
     return rf
-print("EL RESULTADO ES:", suma())
-suma()
+matriz_1(fila,columna)
+matriz_2(fila2,columna2)
+print("EL RESULTADO ES:", suma(matriz,matriz2))
