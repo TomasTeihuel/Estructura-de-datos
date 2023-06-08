@@ -17,7 +17,7 @@ def matriz_1(fila, columna):
 def matriz_2(fila2, columna2):
     for i in range(fila2):
         for j in range(columna2):
-            matriz2[i][j] += int(input(f"elemento2:"))
+            matriz2[i][j] += int(input(f"elemento:"))
     return  print(matriz2)
 
 def suma(matriz, matriz2):
